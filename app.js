@@ -13,11 +13,13 @@ const displayCountry = (countries) => {
 };
 
 const getCountryHTML = (country) => {
+  const { name, capital, flag, nativeName } = country;
   return `
     <div>
-        <h2>${country.name}</h2>
-        <h4>Capital: ${country.capital}</h4>
-        <img src="${country.flag}">
+        <h2>${name}</h2>
+        <h4>Capital: ${capital}</h4>
+        <h5>Native Name: ${nativeName}</h5>
+        <img src="${flag}">
     </div>
     `;
 };
