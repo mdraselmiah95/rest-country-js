@@ -6,7 +6,9 @@ const loadCounties = () => {
 
 const displayCountry = (countries) => {
   console.log(countries[0]);
+  const container = document.getElementById("country");
   const countryHTML = countries.map((country) => getCountryHTML(country));
+  container.innerHTML = countryHTML[0];
   console.log(countryHTML[0]);
 };
 
